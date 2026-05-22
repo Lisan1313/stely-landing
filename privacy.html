@@ -383,20 +383,21 @@
 
       <h3>El modelo de IA que usamos</h3>
       <p>
-        Stely utiliza exclusivamente <strong>Anthropic Claude</strong> como motor de inteligencia
+        Stely utiliza exclusivamente <strong>OpenAI GPT-4o-mini</strong> como motor de inteligencia
         artificial. No usamos ningún otro proveedor de IA.
       </p>
       <p>
         Cuando escribes un mensaje, este viaja a través de un servidor intermediario propio (alojado
-        en Vercel) hasta los servidores de Anthropic, que generan la respuesta de Stely. Anthropic
+        en Vercel) hasta los servidores de OpenAI, que generan la respuesta de Stely. OpenAI
         solo recibe el contenido del mensaje y el contexto reciente de la conversación. No recibe tu
         email, tu nombre ni tu identificador de usuario.
       </p>
       <p>
-        Por contrato con Anthropic (política de uso de API): <strong>Anthropic no usa los datos
+        Por contrato con OpenAI (política de uso de API): <strong>OpenAI no usa los datos
         enviados a través de la API para entrenar sus modelos</strong>. Esto es diferente a su
-        producto de consumo (Claude.ai), donde sí puede usar datos si no rechazas expresamente esa
-        opción.
+        producto de consumo (ChatGPT), donde sí puede usar datos si no rechazas expresamente esa
+        opción. OpenAI guarda logs de API durante 30 días para monitorización de abusos,
+        tras lo cual los elimina.
       </p>
 
       <h3>Detección de crisis: 100% local en tu dispositivo</h3>
@@ -409,7 +410,7 @@
       <p>Esto significa que:</p>
       <ul>
         <li>Nadie en Stely ve que tuviste una crisis</li>
-        <li>Anthropic no recibe ese mensaje</li>
+        <li>OpenAI no recibe ese mensaje</li>
         <li>No queda ningún registro asociado a tu cuenta</li>
       </ul>
 
@@ -445,7 +446,7 @@
             <td>Europa (Frankfurt, UE)</td>
           </tr>
           <tr>
-            <td>Anthropic</td>
+            <td>OpenAI</td>
             <td>Contenido del mensaje + contexto reciente</td>
             <td>Generar respuestas de Stely</td>
             <td>Estados Unidos</td>
@@ -453,7 +454,7 @@
           <tr>
             <td>Vercel</td>
             <td>Mensaje en tránsito (no lo almacena)</td>
-            <td>Intermediario entre app y Anthropic</td>
+            <td>Intermediario entre app y OpenAI</td>
             <td>Estados Unidos</td>
           </tr>
           <tr>
@@ -480,7 +481,7 @@
     <section class="legal-section" id="transferencias">
       <h2>7. Transferencias internacionales fuera del Espacio Económico Europeo</h2>
       <p>
-        Anthropic, Vercel y RevenueCat procesan datos en Estados Unidos. Para hacerlo de forma legal
+        OpenAI, Vercel y RevenueCat procesan datos en Estados Unidos. Para hacerlo de forma legal
         bajo el GDPR, cada uno de ellos utiliza <strong>Cláusulas Contractuales Tipo (Standard
         Contractual Clauses, SCCs)</strong> aprobadas por la Comisión Europea, y/o está adherido al
         <strong>Marco de Privacidad de Datos UE-EEUU (EU-US Data Privacy Framework)</strong>.
@@ -502,7 +503,7 @@
       <p>Esta sección es tan importante como el resto.</p>
       <ul>
         <li><strong>No vendemos tus datos</strong> a nadie, bajo ningún concepto.</li>
-        <li><strong>No usamos tus conversaciones para entrenar IA</strong> &mdash; ni la nuestra ni la de Anthropic.</li>
+        <li><strong>No usamos tus conversaciones para entrenar IA</strong> &mdash; ni la nuestra ni la de OpenAI.</li>
         <li><strong>No mostramos publicidad</strong> en Stely. Ni ahora ni en el futuro.</li>
         <li><strong>No instalamos trackers publicitarios</strong> &mdash; sin Google Analytics, sin Firebase, sin Facebook SDK, sin Mixpanel.</li>
         <li><strong>No construimos un perfil psicológico</strong> de ti con fines comerciales.</li>
