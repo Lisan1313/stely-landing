@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0F0E14" />
+  <title>Términos y Condiciones — Stely</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Estilos específicos del documento legal ──────────────── */
+    .legal-page {
+      padding: 0;
+    }
+    .legal-header-doc {
+      padding: 40px var(--padding, 24px) 24px;
+      border-bottom: 1px solid rgba(232, 181, 71, 0.12);
+    }
+    .legal-back {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.50);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+      transition: color 0.2s ease;
+    }
+    .legal-back:hover { color: var(--dorado, #E8B547); }
+    .legal-doc-title {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--cream, #F5EDD8);
+      margin-bottom: 6px;
+    }
+    .legal-meta {
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.40);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Body del documento ─────────────────────────────────────── */
+    .legal-body {
+      padding: 48px var(--padding, 24px);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .legal-intro {
+      font-size: 0.95rem;
+      color: rgba(245, 237, 216, 0.70);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+    .meta-box {
+      background: rgba(232, 181, 71, 0.06);
+      border: 1px solid rgba(232, 181, 71, 0.18);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 36px;
+      font-size: 0.88rem;
+      line-height: 1.80;
+    }
+    .meta-box .meta-key {
+      color: rgba(245, 237, 216, 0.50);
+    }
+    .meta-box .meta-val {
+      color: var(--cream, #F5EDD8);
+    }
+    .meta-box a {
+      color: var(--dorado, #E8B547);
+      text-decoration: none;
+    }
+    .meta-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
+    .legal-section {
+      margin-bottom: 32px;
+    }
+    .legal-section-title {
+      font-size: 0.78rem;
+      color: var(--dorado, #E8B547);
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(232, 181, 71, 0.10);
+    }
+    .legal-section p {
+      font-size: 0.93rem;
+      color: rgba(245, 237, 216, 0.72);
+      line-height: 1.78;
+      margin-bottom: 12px;
+    }
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+    .legal-section strong {
+      color: var(--cream, #F5EDD8);
+      font-weight: 500;
+    }
+    .legal-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px 0;
+    }
+    .legal-section ul li {
+      font-size: 0.93rem;
+      color: rgba(245, 237, 216, 0.72);
+      line-height: 1.78;
+      padding-left: 1.2em;
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .legal-section ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--dorado, #E8B547);
+      opacity: 0.70;
+    }
+
+    /* Crisis box */
+    .crisis-box {
+      background: rgba(232, 181, 71, 0.05);
+      border: 1px solid rgba(232, 181, 71, 0.22);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .crisis-box p {
+      font-size: 0.88rem !important;
+      color: rgba(245, 237, 216, 0.65) !important;
+      margin-bottom: 4px !important;
+    }
+    .crisis-box .crisis-label {
+      font-size: 0.72rem !important;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dorado, #E8B547) !important;
+      font-weight: 600;
+      margin-bottom: 12px !important;
+    }
+    .crisis-box strong {
+      color: var(--cream, #F5EDD8) !important;
+    }
+    .crisis-box a {
+      color: var(--dorado, #E8B547);
+      text-decoration: none;
+    }
+    .crisis-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Email link */
+    .email-link {
+      color: var(--dorado, #E8B547);
+      text-decoration: none;
+      font-size: 0.93rem;
+    }
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Precios */
+    .price-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+    .price-pill {
+      background: rgba(232, 181, 71, 0.08);
+      border: 1px solid rgba(232, 181, 71, 0.25);
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: 0.92rem;
+      color: var(--cream, #F5EDD8);
+      letter-spacing: 0.05em;
+    }
+
+    /* Separador de sección */
+    .section-sep {
+      border: none;
+      height: 1px;
+      background: rgba(232, 181, 71, 0.08);
+      margin: 32px 0;
+    }
+
+    /* Footer del doc */
+    .doc-footer-note {
+      font-size: 0.78rem;
+      color: rgba(245, 237, 216, 0.25);
+      letter-spacing: 0.06em;
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(232, 181, 71, 0.10);
+    }
+
+    @media (min-width: 768px) {
+      .legal-header-doc {
+        padding: 56px var(--padding, 40px) 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Cabecera del documento ──────────────────────────────────── -->
+  <div class="legal-header-doc">
+    <div class="container">
+      <a href="index.html" class="legal-back">&#8592; Volver a Stely</a>
+      <h1 class="legal-doc-title">Términos y Condiciones</h1>
+      <p class="legal-meta">Stely &middot; v2.0 &middot; Última actualización: 21 de mayo de 2026</p>
+    </div>
+  </div>
+
+  <!-- ── Cuerpo legal ────────────────────────────────────────────── -->
+  <main class="legal-body">
+
+    <p class="legal-intro">
+      Bienvenida a Stely. Estos Términos y Condiciones regulan el uso de la aplicación
+      móvil Stely ("la app", "el servicio"). Al usar Stely, aceptas estos términos.
+      Si no los aceptas, no debes usar la app.
+    </p>
+
+    <div class="meta-box">
+      <p><span class="meta-key">Responsable del servicio: </span><span class="meta-val">Sandra</span></p>
+      <p><span class="meta-key">Contacto: </span><a href="mailto:stelycontacto.app@gmail.com">stelycontacto.app@gmail.com</a></p>
+      <p><span class="meta-key">Jurisdicción: </span><span class="meta-val">España. Juzgados y Tribunales de Madrid.</span></p>
+    </div>
+
+    <!-- 1 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">1. Quiénes pueden usar Stely</h2>
+      <p>
+        Stely está dirigida exclusivamente a personas de <strong>16 años o más</strong>.
+        Al aceptar estos Términos, declaras que cumples este requisito de edad. Si tienes
+        conocimiento de que un menor de 16 años está usando la app, comunícanoslo a
+        <a href="mailto:stelycontacto.app@gmail.com" class="email-link">stelycontacto.app@gmail.com</a>.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 2 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">2. Qué es Stely — y qué NO es</h2>
+      <p>
+        Stely es una aplicación de <strong>compañía emocional con inteligencia artificial</strong>.
+        Está diseñada para ofrecerte un espacio seguro de escucha, reflexión y calma.
+      </p>
+      <p><strong>Stely NO es:</strong></p>
+      <ul>
+        <li>Un servicio médico, psicológico ni de salud mental.</li>
+        <li>Un sustituto de la terapia, la psiquiatría ni de cualquier atención sanitaria profesional.</li>
+        <li>Una línea de emergencias ni de crisis.</li>
+        <li>Un servicio de asesoramiento legal, financiero ni de ningún otro tipo.</li>
+      </ul>
+      <p>
+        Si estás atravesando una situación de crisis, emergencia o riesgo para tu vida o
+        la de otros, <strong>abandona Stely de inmediato y contacta con los servicios de
+        emergencia de tu país</strong> (en España: 024 — línea de atención a conducta suicida;
+        112 — emergencias generales).
+      </p>
+      <p>
+        La app detecta automáticamente señales de crisis en los mensajes e interrumpe la
+        conversación para mostrarte los recursos de ayuda adecuados. Esta función no puede
+        desactivarse: la seguridad de las usuarias está por encima de cualquier otra
+        consideración.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 3 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">3. Tu cuenta</h2>
+      <p>
+        Cuando usas Stely por primera vez, se crea automáticamente una cuenta anónima
+        asociada a tu dispositivo. Puedes vincularla a tu correo electrónico, Apple o Google
+        en cualquier momento desde los ajustes de la app. Esto te permite recuperar tu cuenta
+        si cambias de dispositivo.
+      </p>
+      <p>
+        Eres responsable de mantener la confidencialidad de tus credenciales y de las
+        actividades que se realicen desde tu cuenta.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 4 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">4. La inteligencia artificial de Stely</h2>
+      <p>
+        La compañera Stely está impulsada por modelos de inteligencia artificial de Anthropic
+        (Claude). Las respuestas son generadas de forma automatizada.
+      </p>
+      <p><strong>Recuerda:</strong></p>
+      <ul>
+        <li>La IA puede cometer errores o producir respuestas imprecisas. No tomes decisiones
+            importantes basándote únicamente en lo que Stely te diga.</li>
+        <li>Stely no recuerda conversaciones previas entre sesiones a menos que actives el historial.</li>
+        <li>Las conversaciones pasan por un servidor proxy seguro. Anthropic procesa los
+            mensajes según su política de privacidad y <strong>no entrena sus modelos con
+            datos de la API</strong>.</li>
+        <li>Stely no está diseñada para simular una relación personal, romántica ni de
+            dependencia emocional.</li>
+      </ul>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 5 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">5. Emergencias y salud mental</h2>
+
+      <div class="crisis-box">
+        <p class="crisis-label">Si estás en crisis</p>
+        <p>España: <strong>024</strong> (conducta suicida) &middot; <strong>112</strong> (emergencias)</p>
+        <p>EEUU: <strong>988</strong> &middot; UK: <strong>116 123</strong></p>
+        <p>México: <strong>55 5259-8121</strong> &middot; Argentina: <strong>135</strong> &middot; Chile: <strong>600 360 7777</strong></p>
+        <p>Otros países: <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a></p>
+      </div>
+
+      <p>
+        En ninguna circunstancia debes usar Stely como canal de atención ante una emergencia
+        médica o psicológica. La app no tiene capacidad de responder en tiempo real ante una
+        crisis ni puede sustituir la intervención humana profesional.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 6 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">6. Uso permitido</h2>
+      <p>Te comprometes a usar Stely de forma legal, respetuosa y conforme a estos Términos. Queda prohibido:</p>
+      <ul>
+        <li>Usar la app para fines contrarios a la ley o que puedan causar daño a terceros.</li>
+        <li>Intentar acceder a sistemas, bases de datos o cuentas de otras usuarias.</li>
+        <li>Hacer un uso comercial no autorizado del servicio.</li>
+        <li>Usar la app para acosar, amenazar o dañar a otras personas.</li>
+      </ul>
+      <p>
+        Nos reservamos el derecho de suspender o cancelar el acceso si se detecta un uso
+        que incumpla estos términos.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 7 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">7. Cancelación de tu cuenta</h2>
+      <p>
+        Puedes cancelar tu cuenta en cualquier momento desde <strong>Ajustes → Cuenta → Eliminar
+        cuenta</strong>. Al hacerlo:
+      </p>
+      <ul>
+        <li>Todos tus datos personales y de conversación serán borrados permanentemente de
+            nuestros servidores conforme al GDPR (Art. 17).</li>
+        <li>Si tienes una suscripción Premium activa, la cancelación de cuenta no implica un
+            reembolso automático. La suscripción debe cancelarse por separado desde la tienda
+            (App Store / Google Play) antes de eliminar la cuenta.</li>
+      </ul>
+      <p>
+        Si necesitas ayuda para eliminar tu cuenta, escríbenos a
+        <a href="mailto:stelycontacto.app@gmail.com" class="email-link">stelycontacto.app@gmail.com</a>.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 8 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">8. Suscripciones Premium</h2>
+      <p>Stely ofrece un plan de acceso gratuito y un plan Premium de pago.</p>
+
+      <div class="price-row">
+        <span class="price-pill">€6,99 / mes</span>
+        <span class="price-pill">€49,99 / año</span>
+      </div>
+
+      <p>
+        Las suscripciones se gestionan a través de Google Play (Android) o App Store (iOS).
+        El cobro se realiza conforme a las condiciones de la tienda correspondiente.
+      </p>
+      <p>
+        <strong>Prueba gratuita:</strong> el plan Premium incluye un período de prueba de 3 días
+        sin cargo. Puedes cancelar durante la prueba sin coste alguno.
+      </p>
+      <p>
+        <strong>Derecho de desistimiento (UE — 14 días):</strong> conforme a la normativa de
+        consumidores de la Unión Europea, tienes derecho a desistir de una suscripción Premium
+        dentro de los 14 días naturales siguientes a su contratación, con derecho a reembolso
+        completo. Para ejercer este derecho, contacta con la tienda o escríbenos a
+        <a href="mailto:stelycontacto.app@gmail.com" class="email-link">stelycontacto.app@gmail.com</a>.
+      </p>
+      <p>
+        <strong>Cancelación:</strong> puedes cancelar en cualquier momento desde los ajustes de
+        tu tienda. El acceso Premium se mantiene activo hasta el final del período ya pagado.
+      </p>
+      <p>
+        No existen compras de por vida (Lifetime). El modelo de monetización es únicamente
+        suscripción mensual o anual.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 9 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">9. Tu contenido</h2>
+      <p>
+        Eres la <strong>propietaria de las conversaciones y contenidos</strong> que introduces
+        en Stely. Al usar la app, nos concedes una licencia limitada, no exclusiva y revocable
+        para procesar ese contenido única y exclusivamente con el fin de prestarte el servicio,
+        tal y como se describe en nuestra Política de Privacidad.
+      </p>
+      <p>
+        No compartimos, vendemos ni cedemos tu contenido a terceros salvo los subprocesadores
+        necesarios para el funcionamiento del servicio (Anthropic para el procesamiento de IA,
+        Supabase para el almacenamiento).
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 10 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">10. Propiedad intelectual</h2>
+      <p>
+        El diseño, código, textos, marca, logotipo y cualquier otro elemento creativo de Stely
+        son propiedad exclusiva de Stely o de sus licenciantes. Queda prohibida su reproducción,
+        distribución o uso comercial sin autorización expresa.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 11 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">11. Limitación de responsabilidad</h2>
+      <p>En la medida máxima permitida por la ley aplicable:</p>
+      <ul>
+        <li>No garantizamos la precisión, completitud ni adecuación de las respuestas generadas por la IA.</li>
+        <li>No somos responsables de las decisiones que tomes basándote en las conversaciones con Stely.</li>
+        <li>No somos responsables de daños indirectos, incidentales o consecuentes derivados del uso o
+            la imposibilidad de uso del servicio.</li>
+        <li>El servicio se presta "tal cual", sin garantías de disponibilidad continua ni ininterrumpida.</li>
+      </ul>
+      <p>
+        Esta limitación no afecta a los derechos que te correspondan como consumidora bajo la
+        legislación española y europea.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 12 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">12. Fuerza mayor</h2>
+      <p>
+        No somos responsables de interrupciones o fallos del servicio causados por circunstancias
+        fuera de nuestro control razonable, incluyendo cortes en servicios de terceros (Anthropic,
+        Supabase, Google Play, App Store), fallos de infraestructura de internet, catástrofes
+        naturales o actos de autoridades gubernamentales.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 13 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">13. Cambios en estos Términos</h2>
+      <p>
+        Podemos actualizar estos Términos cuando sea necesario. Cuando realicemos cambios
+        relevantes, te lo comunicaremos mediante una notificación dentro de la app o un aviso
+        en la pantalla de inicio de sesión.
+      </p>
+      <p>
+        Si continúas usando Stely tras la entrada en vigor de los nuevos Términos, se entenderá
+        que los aceptas. Si no estás de acuerdo, puedes cancelar tu cuenta según lo descrito
+        en la sección 7.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 14 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">14. Suspensión y finalización del servicio</h2>
+      <p>
+        Nos reservamos el derecho de suspender o finalizar el servicio en cualquier momento,
+        con previo aviso razonable. En caso de cierre definitivo, notificaremos a las usuarias
+        con al menos 30 días de antelación y facilitaremos la exportación de los datos que nos
+        corresponda entregar conforme al GDPR.
+      </p>
+      <p>
+        Las suscripciones Premium en curso serán reembolsadas proporcionalmente al tiempo
+        no disfrutado.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 15 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">15. Nulidad parcial</h2>
+      <p>
+        Si alguna cláusula de estos Términos fuese declarada nula, inválida o inaplicable por
+        un tribunal competente, el resto de los Términos permanecerá plenamente vigente y
+        aplicable.
+      </p>
+    </div>
+    <hr class="section-sep" />
+
+    <!-- 16 -->
+    <div class="legal-section">
+      <h2 class="legal-section-title">16. Contacto</h2>
+      <p>
+        Para cualquier consulta sobre estos Términos, el ejercicio de tus derechos o cualquier
+        asunto relacionado con Stely:
+      </p>
+      <p>
+        <a href="mailto:stelycontacto.app@gmail.com" class="email-link">stelycontacto.app@gmail.com</a>
+      </p>
+      <p>
+        Nos comprometemos a responder en un plazo máximo de 30 días desde la recepción de
+        tu mensaje.
+      </p>
+    </div>
+
+    <p class="doc-footer-note">
+      Stely &middot; Términos y Condiciones v2.0 &middot; España &middot; 2026
+    </p>
+
+  </main>
+
+  <!-- ── Footer global ───────────────────────────────────────────── -->
+  <footer style="border-top: 1px solid rgba(232,181,71,0.10); padding: 32px 24px; text-align: center; max-width: 800px; margin: 0 auto;">
+    <p class="footer-copy">
+      &copy; 2026 Stely &mdash;
+      <a href="privacy.html" style="color:rgba(245,237,216,0.40); text-decoration:none; margin: 0 8px;">Privacidad</a>
+      <span style="color:rgba(232,181,71,0.20);">&middot;</span>
+      <a href="terms.html" style="color:rgba(245,237,216,0.40); text-decoration:none; margin: 0 8px;">Términos</a>
+      <span style="color:rgba(232,181,71,0.20);">&middot;</span>
+      <a href="disclaimer-ia.html" style="color:rgba(245,237,216,0.40); text-decoration:none; margin: 0 8px;">Disclaimer IA</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0F0E14" />
+  <meta name="description" content="Política de Privacidad de Stely — Versión 2.0. Tu compañía emocional con IA." />
+  <title>Política de Privacidad — Stely</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Estilos específicos de páginas legales ─────────────────── */
+
+    .legal-header {
+      padding: 40px var(--padding, 24px) 28px;
+      border-bottom: 1px solid rgba(232, 181, 71, 0.12);
+      max-width: var(--max-w, 800px);
+      margin: 0 auto;
+    }
+
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.50);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+      transition: color 0.2s ease;
+    }
+    .legal-back:hover { color: var(--dorado, #E8B547); }
+
+    .legal-title {
+      font-size: clamp(1.4rem, 4.5vw, 2rem);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--cream, #F5EDD8);
+      margin-bottom: 8px;
+    }
+
+    .legal-subtitle {
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.38);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Contenido principal ────────────────────────────────────── */
+
+    .legal-body {
+      max-width: var(--max-w, 800px);
+      margin: 0 auto;
+      padding: 48px var(--padding, 24px) 80px;
+    }
+
+    .legal-intro {
+      font-size: 1rem;
+      color: rgba(245, 237, 216, 0.70);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .legal-intro a {
+      color: var(--dorado, #E8B547);
+      text-decoration: none;
+    }
+    .legal-intro a:hover { text-decoration: underline; }
+
+    /* ── Secciones ──────────────────────────────────────────────── */
+
+    .legal-section {
+      margin-top: 48px;
+    }
+
+    .legal-section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--dorado, #E8B547);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(232, 181, 71, 0.14);
+    }
+
+    .legal-section h3 {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--cream, #F5EDD8);
+      letter-spacing: 0.04em;
+      margin: 20px 0 10px;
+    }
+
+    .legal-section p {
+      font-size: 0.95rem;
+      color: rgba(245, 237, 216, 0.70);
+      line-height: 1.78;
+      margin-bottom: 14px;
+    }
+
+    .legal-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    .legal-section ul li {
+      font-size: 0.93rem;
+      color: rgba(245, 237, 216, 0.68);
+      line-height: 1.72;
+      padding: 4px 0 4px 18px;
+      position: relative;
+    }
+
+    .legal-section ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--dorado, #E8B547);
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    /* ── Tablas ─────────────────────────────────────────────────── */
+
+    .legal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 20px;
+      font-size: 0.88rem;
+    }
+
+    .legal-table th {
+      background: rgba(232, 181, 71, 0.08);
+      color: var(--dorado, #E8B547);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid rgba(232, 181, 71, 0.14);
+    }
+
+    .legal-table td {
+      color: rgba(245, 237, 216, 0.65);
+      font-weight: 300;
+      padding: 9px 12px;
+      border: 1px solid rgba(232, 181, 71, 0.10);
+      vertical-align: top;
+      line-height: 1.65;
+    }
+
+    .legal-table tr:nth-child(even) td {
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    /* ── Email destacado ────────────────────────────────────────── */
+
+    .contact-email {
+      display: inline-block;
+      color: var(--dorado, #E8B547);
+      font-size: 1rem;
+      font-weight: 400;
+      text-decoration: none;
+      margin: 6px 0 14px;
+    }
+    .contact-email:hover { text-decoration: underline; }
+
+    /* ── Bloque versión ─────────────────────────────────────────── */
+
+    .legal-version {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(232, 181, 71, 0.10);
+      font-size: 0.78rem;
+      color: rgba(245, 237, 216, 0.28);
+      line-height: 1.7;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+
+    .legal-footer {
+      border-top: 1px solid rgba(232, 181, 71, 0.10);
+      padding: 32px var(--padding, 24px) 48px;
+      max-width: var(--max-w, 800px);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .legal-footer .footer-logo {
+      font-size: 0.78rem;
+      letter-spacing: 0.35em;
+      color: rgba(245, 237, 216, 0.25);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .legal-footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 18px;
+      margin-bottom: 20px;
+    }
+
+    .legal-footer .footer-links a {
+      font-size: 0.80rem;
+      color: rgba(245, 237, 216, 0.42);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s ease;
+    }
+    .legal-footer .footer-links a:hover { color: var(--dorado, #E8B547); }
+
+    .legal-footer .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(245, 237, 216, 0.20);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Responsive ─────────────────────────────────────────────── */
+
+    @media (max-width: 560px) {
+      .legal-table {
+        font-size: 0.80rem;
+      }
+      .legal-table th,
+      .legal-table td {
+        padding: 7px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────────────────────────── -->
+  <header class="legal-header">
+    <a href="index.html" class="legal-back">&#8592; Volver a Stely</a>
+    <h1 class="legal-title">Política de Privacidad</h1>
+    <p class="legal-subtitle">Versión 2.0 &mdash; Última actualización: 21 de mayo de 2026</p>
+  </header>
+
+  <!-- ── Contenido ───────────────────────────────────────────────────────────── -->
+  <main class="legal-body">
+
+    <!-- Intro -->
+    <p class="legal-intro">
+      Stely es una aplicación de compañía emocional con inteligencia artificial. Creamos un espacio
+      donde puedes sentirte acompañada, a tu ritmo, sin juicios. Tu confianza es lo más importante
+      que nos puedes dar.
+    </p>
+    <p class="legal-intro">
+      Esta Política de Privacidad explica, en lenguaje claro, qué datos recogemos, por qué, cómo
+      los protegemos y cuáles son tus derechos. No hay letra pequeña ni lenguaje enredado a propósito.
+    </p>
+    <p class="legal-intro">
+      Si tienes cualquier duda, escríbenos a
+      <a href="mailto:stelycontacto.app@gmail.com">stelycontacto.app@gmail.com</a>.
+    </p>
+
+    <!-- 1. Quiénes somos -->
+    <section class="legal-section" id="quienes-somos">
+      <h2>1. Quiénes somos</h2>
+      <ul>
+        <li><strong>Responsable del tratamiento:</strong> Sandra (nombre completo e identificación fiscal a añadir antes del lanzamiento)</li>
+        <li><strong>Correo de contacto y privacidad:</strong> <a href="mailto:stelycontacto.app@gmail.com" style="color: var(--dorado);">stelycontacto.app@gmail.com</a></li>
+        <li><strong>Jurisdicción:</strong> España</li>
+        <li><strong>Normativa aplicable:</strong> GDPR (Reglamento UE 2016/679) + LOPD-GDD (Ley Orgánica 3/2018)</li>
+        <li><strong>Autoridad de control:</strong> Agencia Española de Protección de Datos &mdash; <a href="https://www.aepd.es" target="_blank" rel="noopener" style="color: var(--dorado);">www.aepd.es</a></li>
+      </ul>
+      <p>
+        Stely opera desde España. La ley española y europea de protección de datos rige todo el
+        tratamiento de tus datos, independientemente de donde te encuentres cuando uses la app.
+      </p>
+    </section>
+
+    <!-- 2. Qué datos recopilamos -->
+    <section class="legal-section" id="datos-recopilados">
+      <h2>2. Qué datos recopilamos</h2>
+      <p>Recogemos únicamente lo imprescindible para que Stely funcione.</p>
+
+      <h3>Si usas Stely como usuaria anónima (sin crear cuenta con email):</h3>
+      <ul>
+        <li>Un identificador anónimo generado automáticamente (no contiene información personal)</li>
+        <li>Los mensajes que escribes en el chat (necesarios para que Stely te responda)</li>
+        <li>Tu elección de estado de ánimo al iniciar cada sesión</li>
+        <li>La versión de la app y el sistema operativo (para detectar errores técnicos)</li>
+      </ul>
+
+      <h3>Si vinculas una cuenta (email, Apple o Google):</h3>
+      <ul>
+        <li>Tu dirección de correo electrónico</li>
+        <li>El proveedor de login que uses (Apple, Google o email directo)</li>
+        <li>Fecha de creación de la cuenta</li>
+      </ul>
+
+      <h3>En todos los casos:</h3>
+      <ul>
+        <li>Los consentimientos que aceptas en el proceso de bienvenida, con su fecha y versión del documento (obligatorio por GDPR)</li>
+        <li>Los rituales que configures en la app</li>
+        <li>Tu estado de suscripción (si eres usuaria Premium)</li>
+        <li>Información técnica básica: versión de app, plataforma (Android/iOS), última sesión activa</li>
+      </ul>
+
+      <h3>Lo que Stely NO recoge nunca:</h3>
+      <ul>
+        <li>Tu ubicación GPS ni tu posición física</li>
+        <li>Tus contactos, fotos ni archivos personales</li>
+        <li>Datos biométricos de ningún tipo</li>
+        <li>Identificadores publicitarios (IDFA de Apple, GAID de Android)</li>
+        <li>Historial de navegación externo</li>
+        <li>Información de tus otras apps</li>
+      </ul>
+    </section>
+
+    <!-- 3. Para qué utilizamos los datos -->
+    <section class="legal-section" id="finalidad">
+      <h2>3. Para qué utilizamos los datos</h2>
+      <p>
+        Cada dato que recogemos tiene una finalidad concreta y declarada. No usamos tus datos para
+        nada que no esté en esta lista:
+      </p>
+      <ul>
+        <li><strong>Generar las respuestas de Stely</strong> &mdash; tus mensajes se envían a la IA para producir una respuesta. Sin esto, la app no puede funcionar.</li>
+        <li><strong>Mantener tu historial de conversaciones</strong> &mdash; para que puedas retomar donde lo dejaste.</li>
+        <li><strong>Gestionar tu suscripción Premium</strong> &mdash; saber si tienes acceso a las funciones de pago.</li>
+        <li><strong>Detectar situaciones de crisis</strong> &mdash; Stely analiza tus mensajes localmente en tu dispositivo para ofrecerte recursos de ayuda si lo necesitas. Este análisis no sale de tu teléfono.</li>
+        <li><strong>Cumplir con la normativa</strong> &mdash; guardamos registro de los consentimientos que has aceptado.</li>
+        <li><strong>Mejorar la estabilidad técnica</strong> &mdash; usamos datos agregados y anónimos para detectar errores.</li>
+      </ul>
+    </section>
+
+    <!-- 4. Base legal -->
+    <section class="legal-section" id="base-legal">
+      <h2>4. Base legal del tratamiento</h2>
+      <p>De acuerdo con el artículo 6 del GDPR, cada tratamiento de datos tiene su base legal específica:</p>
+      <table class="legal-table">
+        <thead>
+          <tr>
+            <th>Tratamiento</th>
+            <th>Base legal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Generar respuestas de la IA con tus mensajes</td>
+            <td>Consentimiento explícito (Art. 6.1.a) &mdash; dado en el proceso de bienvenida</td>
+          </tr>
+          <tr>
+            <td>Mantener tu historial de conversaciones</td>
+            <td>Consentimiento explícito (Art. 6.1.a)</td>
+          </tr>
+          <tr>
+            <td>Gestionar tu cuenta y suscripción</td>
+            <td>Ejecución del contrato (Art. 6.1.b)</td>
+          </tr>
+          <tr>
+            <td>Guardar los consentimientos aceptados</td>
+            <td>Obligación legal (Art. 6.1.c)</td>
+          </tr>
+          <tr>
+            <td>Registros de auditoría de seguridad</td>
+            <td>Interés legítimo (Art. 6.1.f) &mdash; seguridad de la plataforma</td>
+          </tr>
+          <tr>
+            <td>Datos técnicos para detectar errores</td>
+            <td>Interés legítimo (Art. 6.1.f) &mdash; funcionamiento del servicio</td>
+          </tr>
+          <tr>
+            <td>Registros de transacciones económicas</td>
+            <td>Obligación legal (Art. 6.1.c) &mdash; normativa fiscal española</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Stely trata el contenido de tus conversaciones con el máximo nivel de protección, equiparable
+        a datos de categoría especial, aunque técnicamente no lo sean según el artículo 9 del GDPR.
+        Lo hacemos por responsabilidad, no porque la ley lo exija.
+      </p>
+    </section>
+
+    <!-- 5. Inteligencia artificial -->
+    <section class="legal-section" id="ia">
+      <h2>5. Inteligencia artificial &mdash; cómo funciona en Stely</h2>
+
+      <h3>El modelo de IA que usamos</h3>
+      <p>
+        Stely utiliza exclusivamente <strong>Anthropic Claude</strong> como motor de inteligencia
+        artificial. No usamos ningún otro proveedor de IA.
+      </p>
+      <p>
+        Cuando escribes un mensaje, este viaja a través de un servidor intermediario propio (alojado
+        en Vercel) hasta los servidores de Anthropic, que generan la respuesta de Stely. Anthropic
+        solo recibe el contenido del mensaje y el contexto reciente de la conversación. No recibe tu
+        email, tu nombre ni tu identificador de usuario.
+      </p>
+      <p>
+        Por contrato con Anthropic (política de uso de API): <strong>Anthropic no usa los datos
+        enviados a través de la API para entrenar sus modelos</strong>. Esto es diferente a su
+        producto de consumo (Claude.ai), donde sí puede usar datos si no rechazas expresamente esa
+        opción.
+      </p>
+
+      <h3>Detección de crisis: 100% local en tu dispositivo</h3>
+      <p>
+        Si escribes algo que puede indicar que estás en una situación de crisis, Stely lo detecta
+        directamente en tu teléfono, antes de que el mensaje salga del dispositivo. El mensaje
+        <strong>no se envía a la IA externa</strong>. Stely responde localmente con recursos de
+        ayuda del país de tu dispositivo.
+      </p>
+      <p>Esto significa que:</p>
+      <ul>
+        <li>Nadie en Stely ve que tuviste una crisis</li>
+        <li>Anthropic no recibe ese mensaje</li>
+        <li>No queda ningún registro asociado a tu cuenta</li>
+      </ul>
+
+      <h3>Decisiones automatizadas (Art. 22 GDPR)</h3>
+      <p>
+        Stely personaliza sus respuestas según el estado de ánimo que eliges al iniciar la sesión y
+        el historial de la conversación. Esta personalización no produce efectos legales ni decisiones
+        significativas sobre ti (no afecta a un contrato, a un crédito, a tu empleo ni a nada de esa
+        naturaleza). Es simplemente una adaptación del tono de la conversación.
+      </p>
+    </section>
+
+    <!-- 6. Con quién compartimos -->
+    <section class="legal-section" id="proveedores">
+      <h2>6. Con quién compartimos tus datos</h2>
+      <p>
+        Trabajamos con un número limitado de proveedores, todos necesarios para que Stely funcione:
+      </p>
+      <table class="legal-table">
+        <thead>
+          <tr>
+            <th>Proveedor</th>
+            <th>Qué recibe</th>
+            <th>Para qué</th>
+            <th>Dónde procesa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Supabase</td>
+            <td>Mensajes (cifrados), perfil, historial</td>
+            <td>Base de datos y autenticación</td>
+            <td>Europa (Frankfurt, UE)</td>
+          </tr>
+          <tr>
+            <td>Anthropic</td>
+            <td>Contenido del mensaje + contexto reciente</td>
+            <td>Generar respuestas de Stely</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>Vercel</td>
+            <td>Mensaje en tránsito (no lo almacena)</td>
+            <td>Intermediario entre app y Anthropic</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>RevenueCat</td>
+            <td>Identificador anónimo + estado suscripción</td>
+            <td>Gestión del plan Premium</td>
+            <td>Estados Unidos</td>
+          </tr>
+          <tr>
+            <td>Apple / Google</td>
+            <td>Datos de pago, ID de dispositivo</td>
+            <td>Distribución y compras in-app</td>
+            <td>Estados Unidos</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Stely <strong>no comparte tus datos</strong> con anunciantes, redes sociales, brokers de
+        datos ni ningún tercero fuera de esta lista.
+      </p>
+    </section>
+
+    <!-- 7. Transferencias internacionales -->
+    <section class="legal-section" id="transferencias">
+      <h2>7. Transferencias internacionales fuera del Espacio Económico Europeo</h2>
+      <p>
+        Anthropic, Vercel y RevenueCat procesan datos en Estados Unidos. Para hacerlo de forma legal
+        bajo el GDPR, cada uno de ellos utiliza <strong>Cláusulas Contractuales Tipo (Standard
+        Contractual Clauses, SCCs)</strong> aprobadas por la Comisión Europea, y/o está adherido al
+        <strong>Marco de Privacidad de Datos UE-EEUU (EU-US Data Privacy Framework)</strong>.
+      </p>
+      <p>
+        Esto significa que tus datos, aunque viajen a servidores americanos, están protegidos por
+        garantías legales equivalentes a las del GDPR.
+      </p>
+      <p>
+        Supabase, donde se almacenan tus conversaciones, está alojado en la <strong>región Europa
+        (Frankfurt)</strong>, dentro del Espacio Económico Europeo. Tus datos en reposo no salen
+        de la UE.
+      </p>
+    </section>
+
+    <!-- 8. Qué NO hacemos -->
+    <section class="legal-section" id="no-hacemos">
+      <h2>8. Qué NO hacemos</h2>
+      <p>Esta sección es tan importante como el resto.</p>
+      <ul>
+        <li><strong>No vendemos tus datos</strong> a nadie, bajo ningún concepto.</li>
+        <li><strong>No usamos tus conversaciones para entrenar IA</strong> &mdash; ni la nuestra ni la de Anthropic.</li>
+        <li><strong>No mostramos publicidad</strong> en Stely. Ni ahora ni en el futuro.</li>
+        <li><strong>No instalamos trackers publicitarios</strong> &mdash; sin Google Analytics, sin Firebase, sin Facebook SDK, sin Mixpanel.</li>
+        <li><strong>No construimos un perfil psicológico</strong> de ti con fines comerciales.</li>
+        <li><strong>No compartimos tus datos</strong> con terceros que no estén listados en la sección 6.</li>
+        <li><strong>No accedemos al contenido de tus conversaciones</strong> en texto legible &mdash; están cifradas, y la pseudonimización hace que ni el equipo de Stely pueda asociarlas fácilmente a tu identidad.</li>
+      </ul>
+    </section>
+
+    <!-- 9. Seguridad -->
+    <section class="legal-section" id="seguridad">
+      <h2>9. Seguridad: cómo protegemos tus datos</h2>
+      <p>La seguridad no es un añadido. Es parte de cómo construimos Stely desde el primer día.</p>
+      <ul>
+        <li><strong>Cifrado en tránsito:</strong> todas las comunicaciones entre la app y nuestros servidores usan HTTPS/TLS 1.3. No hay ninguna comunicación sin cifrar en ninguna parte de la arquitectura.</li>
+        <li><strong>Cifrado en reposo:</strong> el contenido de tus conversaciones almacenadas en la nube está cifrado con <strong>AES-256-GCM</strong> a nivel de aplicación, antes de guardarse en la base de datos. Esto añade una capa de cifrado adicional sobre el cifrado de disco estándar de la infraestructura.</li>
+        <li><strong>Acceso restringido por diseño:</strong> cada usuaria solo puede acceder a sus propios datos. Tenemos control de acceso a nivel de fila (Row Level Security) en toda la base de datos &mdash; técnicamente es imposible que una usuaria vea los mensajes de otra.</li>
+        <li><strong>Pseudonimización:</strong> las conversaciones en la base de datos están vinculadas a un identificador derivado (no directamente a tu email), lo que dificulta que alguien con acceso técnico a la base de datos pueda asociar el contenido a una persona real.</li>
+        <li><strong>Sin rastreo:</strong> Stely no solicita el permiso de seguimiento publicitario (ATT en iOS) ni usa identificadores de dispositivo para publicidad.</li>
+      </ul>
+    </section>
+
+    <!-- 10. Plazos de conservación -->
+    <section class="legal-section" id="conservacion">
+      <h2>10. Plazos de conservación de datos</h2>
+      <p>No guardamos tus datos más tiempo del necesario.</p>
+      <table class="legal-table">
+        <thead>
+          <tr>
+            <th>Tipo de dato</th>
+            <th>Tiempo de conservación</th>
+            <th>Qué ocurre después</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Caché de mensajes recientes (dispositivo)</td>
+            <td>7 días máximo</td>
+            <td>Purga automática</td>
+          </tr>
+          <tr>
+            <td>Conversaciones en Supabase</td>
+            <td>Hasta que borres tu cuenta</td>
+            <td>Eliminación completa en menos de 24h tras solicitud</td>
+          </tr>
+          <tr>
+            <td>Registros de consentimiento</td>
+            <td>Mínimo 3 años</td>
+            <td>Obligación legal GDPR &mdash; no se pueden borrar antes</td>
+          </tr>
+          <tr>
+            <td>Registros de transacciones económicas</td>
+            <td>5 a 7 años</td>
+            <td>Obligación fiscal española &mdash; no se pueden borrar antes</td>
+          </tr>
+          <tr>
+            <td>Backups de Supabase</td>
+            <td>30 días (ciclo automático)</td>
+            <td>Se purgan automáticamente al cumplir los 30 días</td>
+          </tr>
+          <tr>
+            <td>Logs de seguridad (sin contenido personal)</td>
+            <td>12 meses</td>
+            <td>Anonimización completa</td>
+          </tr>
+          <tr>
+            <td>Datos de perfil (email, preferencias)</td>
+            <td>Hasta borrado de cuenta</td>
+            <td>Eliminación completa en menos de 24h</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 11. Tus derechos -->
+    <section class="legal-section" id="derechos">
+      <h2>11. Tus derechos</h2>
+      <p>Tienes derechos reales sobre tus datos. Aquí te explicamos cuáles son y cómo ejercerlos:</p>
+      <ul>
+        <li><strong>Derecho de acceso (Art. 15 GDPR):</strong> puedes solicitar en cualquier momento una copia de todos los datos que tenemos sobre ti.</li>
+        <li><strong>Derecho de rectificación (Art. 16 GDPR):</strong> si algún dato es incorrecto, puedes pedirnos que lo corrijamos.</li>
+        <li><strong>Derecho de supresión o "derecho al olvido" (Art. 17 GDPR):</strong> puedes pedir que borremos todos tus datos. Lo hacemos en menos de 24 horas tras la confirmación.</li>
+        <li><strong>Derecho de portabilidad (Art. 20 GDPR):</strong> puedes descargar todos tus datos en un formato legible (JSON o ZIP) directamente desde Ajustes. Incluye tu historial de conversaciones, rituales, preferencias y consentimientos.</li>
+        <li><strong>Derecho de oposición (Art. 21 GDPR):</strong> puedes oponerte a ciertos tratamientos basados en interés legítimo.</li>
+        <li><strong>Derecho a presentar una reclamación ante la AEPD (Art. 13.2.d GDPR):</strong> si crees que no estamos tratando tus datos correctamente, tienes derecho a reclamar ante la Agencia Española de Protección de Datos en <a href="https://www.aepd.es" target="_blank" rel="noopener" style="color: var(--dorado);">www.aepd.es</a>.</li>
+      </ul>
+      <p>
+        Para ejercer cualquiera de estos derechos, escríbenos a
+        <a href="mailto:stelycontacto.app@gmail.com" style="color: var(--dorado);">stelycontacto.app@gmail.com</a>.
+        Respondemos en un máximo de 30 días (aunque normalmente mucho antes).
+      </p>
+    </section>
+
+    <!-- 12. Eliminación de cuenta -->
+    <section class="legal-section" id="eliminacion">
+      <h2>12. Eliminación de cuenta</h2>
+      <p>Puedes eliminar tu cuenta en cualquier momento desde Ajustes &rarr; &ldquo;Eliminar mi cuenta&rdquo;.</p>
+      <p>El flujo es:</p>
+      <ul>
+        <li>1. Confirmas que quieres eliminar tu cuenta.</li>
+        <li>2. Te enviamos un email de confirmación con un periodo de 7 días para cancelar si fue un error.</li>
+        <li>3. Si no cancelas en esos 7 días, se inicia el borrado automático y completo.</li>
+        <li>4. En menos de 24 horas quedan eliminados: todos tus mensajes, conversaciones, rituales, perfil, archivos y sesiones activas.</li>
+        <li>5. Te enviamos un email de confirmación cuando el borrado se completa.</li>
+      </ul>
+      <h3>Excepciones al borrado total (requeridas por ley, no por nosotras):</h3>
+      <ul>
+        <li>Los registros de consentimiento que aceptaste (mínimo 3 años &mdash; obligación legal GDPR)</li>
+        <li>Los registros de transacciones económicas si tuviste suscripción de pago (5 a 7 años &mdash; obligación fiscal española)</li>
+      </ul>
+      <p>
+        Estas excepciones están ya anonimizadas o son registros contables sin contenido personal
+        sensible.
+      </p>
+    </section>
+
+    <!-- 13. Menores -->
+    <section class="legal-section" id="menores">
+      <h2>13. Política sobre menores de 16 años</h2>
+      <p>
+        Stely no está dirigida a personas menores de 16 años y no recogemos datos de menores de
+        forma intencionada.
+      </p>
+      <p>Si en algún momento detectamos que una usuaria tiene menos de 16 años, procederemos a:</p>
+      <ul>
+        <li>1. Suspender el acceso a la cuenta de forma inmediata.</li>
+        <li>2. Eliminar todos sus datos de forma permanente en menos de 24 horas.</li>
+        <li>3. Notificarlo si tenemos forma de contacto.</li>
+      </ul>
+      <p>
+        Si eres padre, madre o tutor y crees que tu hijo menor de 16 años ha creado una cuenta en
+        Stely, escríbenos a
+        <a href="mailto:stelycontacto.app@gmail.com" style="color: var(--dorado);">stelycontacto.app@gmail.com</a>
+        y lo gestionamos sin demora.
+      </p>
+    </section>
+
+    <!-- 14. Acceso anónimo -->
+    <section class="legal-section" id="anonimo">
+      <h2>14. Acceso anónimo y privacidad por defecto</h2>
+      <p>
+        No es obligatorio crear una cuenta con email para usar Stely. Al pasar el proceso de
+        bienvenida, Stely crea automáticamente un perfil anónimo. Puedes usar la app completa
+        (en el plan gratuito) sin facilitar ningún dato personal identificable.
+      </p>
+      <p>
+        Stely <strong>no usa cookies</strong>. Al ser una aplicación móvil nativa, no hay cookies.
+        El almacenamiento local del dispositivo se usa únicamente para guardar preferencias de
+        funcionamiento y una caché temporal de los mensajes recientes.
+      </p>
+      <p>
+        Stely <strong>no instala ningún SDK de análisis externo</strong> &mdash; sin Google
+        Analytics, sin Firebase Analytics, sin SDK de Meta, sin Mixpanel, sin ninguna herramienta
+        de tracking de terceros.
+      </p>
+    </section>
+
+    <!-- 15. Cambios -->
+    <section class="legal-section" id="cambios">
+      <h2>15. Cambios en esta política</h2>
+      <p>
+        Si modificamos esta Política de Privacidad de forma significativa, te lo comunicaremos con
+        antelación dentro de la app. Podrás revisar los cambios antes de que entren en vigor. Si no
+        estás de acuerdo con los nuevos términos, podrás eliminar tu cuenta.
+      </p>
+      <p>
+        Los cambios menores (como aclarar el lenguaje sin alterar el fondo) se publicarán sin
+        notificación activa, pero siempre con la fecha actualizada visible en este documento.
+      </p>
+    </section>
+
+    <!-- 16. Contacto -->
+    <section class="legal-section" id="contacto">
+      <h2>16. Contacto</h2>
+      <p>Para cualquier pregunta, duda o solicitud relacionada con tus datos:</p>
+      <a href="mailto:stelycontacto.app@gmail.com" class="contact-email">stelycontacto.app@gmail.com</a>
+      <p>
+        Este correo atiende: contacto general, ejercicio de derechos GDPR (acceso, rectificación,
+        supresión, portabilidad), soporte técnico, y cualquier otra consulta sobre privacidad o
+        uso de la app.
+      </p>
+      <p>Respondemos en un máximo de 30 días, aunque intentamos hacerlo mucho antes.</p>
+    </section>
+
+    <!-- Versión -->
+    <div class="legal-version">
+      <p>Política de Privacidad de Stely &mdash; Versión 2.0</p>
+      <p>Última actualización: 21 de mayo de 2026</p>
+      <p>Redactada en español. La versión en inglés se publicará cuando la app complete su proceso de internacionalización.</p>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────────── -->
+  <footer class="legal-footer">
+    <p class="footer-logo">S T E L Y</p>
+    <nav class="footer-links" aria-label="Pie de página">
+      <a href="index.html">Inicio</a>
+      <a href="privacy.html" aria-current="page">Privacidad</a>
+      <a href="terms.html">Términos</a>
+      <a href="disclaimer-ia.html">Disclaimer IA</a>
+      <a href="mailto:stelycontacto.app@gmail.com">stelycontacto.app@gmail.com</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Stely &mdash; Tu refugio. Tu compañía.</p>
+  </footer>
+
+</body>
+</html>

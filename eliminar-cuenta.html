@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0F0E14" />
+  <meta name="description" content="Cómo eliminar tu cuenta y datos de Stely — derecho al olvido GDPR Art. 17." />
+  <title>Eliminar Cuenta — Stely</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-header {
+      padding: 40px var(--padding, 24px) 24px;
+      border-bottom: 1px solid rgba(232, 181, 71, 0.12);
+    }
+    .legal-back {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.50);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+      transition: color 0.2s ease;
+    }
+    .legal-back:hover { color: var(--dorado, #E8B547); }
+    .legal-title {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      color: var(--cream, #F5EDD8);
+    }
+    .legal-subtitle {
+      font-size: 0.82rem;
+      color: rgba(245, 237, 216, 0.40);
+      margin-top: 6px;
+      letter-spacing: 0.05em;
+    }
+    .legal-body {
+      padding: 48px var(--padding, 24px);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--dorado, #E8B547);
+      text-transform: uppercase;
+      margin: 36px 0 12px;
+    }
+    .body-text {
+      font-size: 0.90rem;
+      color: rgba(245, 237, 216, 0.75);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .sub-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(245, 237, 216, 0.70);
+      margin: 16px 0 8px;
+    }
+    .section-list {
+      margin: 8px 0 16px;
+      padding: 0;
+      list-style: none;
+    }
+    .section-list li {
+      font-size: 0.88rem;
+      color: rgba(245, 237, 216, 0.65);
+      line-height: 1.70;
+      padding: 7px 0 7px 20px;
+      border-bottom: 1px solid rgba(245, 237, 216, 0.06);
+      position: relative;
+    }
+    .section-list li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: rgba(232, 181, 71, 0.50);
+    }
+    .option-card {
+      background: rgba(245, 237, 216, 0.03);
+      border: 1px solid rgba(245, 237, 216, 0.08);
+      border-radius: 10px;
+      padding: 24px;
+      margin: 12px 0;
+    }
+    .option-card h3 {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--cream, #F5EDD8);
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+    }
+    .request-form {
+      background: rgba(232, 181, 71, 0.04);
+      border: 1px solid rgba(232, 181, 71, 0.18);
+      border-radius: 10px;
+      padding: 28px 24px;
+      margin: 20px 0 28px;
+    }
+    .request-form h3 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      color: var(--dorado, #E8B547);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .request-form p {
+      font-size: 0.88rem;
+      color: rgba(245, 237, 216, 0.70);
+      line-height: 1.70;
+      margin-bottom: 12px;
+    }
+    .request-email-link {
+      display: inline-block;
+      background: rgba(232, 181, 71, 0.08);
+      border: 1px solid rgba(232, 181, 71, 0.30);
+      border-radius: 8px;
+      padding: 10px 20px;
+      color: var(--dorado, #E8B547);
+      text-decoration: none;
+      font-size: 0.90rem;
+      letter-spacing: 0.04em;
+      margin-top: 4px;
+      transition: background 0.2s ease;
+    }
+    .request-email-link:hover { background: rgba(232, 181, 71, 0.14); }
+    .delete-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      border: 1px solid rgba(245, 237, 216, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .delete-table th, .delete-table td {
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(245, 237, 216, 0.06);
+    }
+    .delete-table th {
+      background: rgba(232, 181, 71, 0.06);
+      color: var(--dorado, #E8B547);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+    }
+    .delete-table td {
+      color: rgba(245, 237, 216, 0.65);
+    }
+    .delete-table td:first-child {
+      color: rgba(245, 237, 216, 0.80);
+      font-weight: 400;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(232, 181, 71, 0.08);
+      margin: 32px 0;
+    }
+    .legal-note {
+      margin-top: 40px;
+      font-size: 0.78rem;
+      color: rgba(245, 237, 216, 0.30);
+      letter-spacing: 0.06em;
+      text-align: center;
+    }
+    .legal-note a { color: var(--dorado, #E8B547); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="container legal-header">
+    <a href="index.html" class="legal-back">&#8592; Volver a Stely</a>
+    <h1 class="legal-title">Eliminar cuenta y datos</h1>
+    <p class="legal-subtitle">Tu derecho al olvido &middot; GDPR Art. 17 &middot; v2.0 &middot; 21 de mayo de 2026</p>
+  </div>
+
+  <main class="legal-body">
+
+    <p class="body-text">
+      Tienes derecho a solicitar la eliminación de tu cuenta y todos tus datos en cualquier momento,
+      sin justificación, sin penalización y sin que afecte a ningún servicio que ya hayas pagado
+      hasta el final del período vigente.
+    </p>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">1. Dos tipos de borrado</h2>
+
+    <div class="option-card">
+      <h3>Opción A — Solo conversaciones</h3>
+      <p class="body-text">
+        Borra el historial de tus conversaciones con Stely, pero mantiene tu cuenta y preferencias.
+        Útil si quieres empezar de cero sin perder tu suscripción activa.
+      </p>
+      <ul class="section-list">
+        <li>Se realiza inmediatamente.</li>
+        <li>No requiere confirmación adicional.</li>
+        <li>Es irreversible desde el momento de la acción.</li>
+      </ul>
+    </div>
+
+    <div class="option-card">
+      <h3>Opción B — Cuenta completa</h3>
+      <p class="body-text">
+        Borra la cuenta y todos los datos asociados: perfil, conversaciones, preferencias, consentimientos.
+      </p>
+      <ul class="section-list">
+        <li>Se inicia un período de gracia de <strong style="color: rgba(245,237,216,0.90);">7 días</strong> durante los cuales puedes cancelar la solicitud.</li>
+        <li>Después de 7 días, la eliminación es permanente e irreversible.</li>
+        <li>Recibirás una confirmación por email cuando el borrado se complete.</li>
+      </ul>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">2. Exportar tus datos antes de borrar</h2>
+    <p class="body-text">
+      Antes de eliminar tu cuenta, puedes descargar una copia de tus datos (derecho de portabilidad, GDPR Art. 20):
+    </p>
+    <ul class="section-list">
+      <li>Formato: archivo JSON o ZIP descargable.</li>
+      <li>Contenido: conversaciones, preferencias, historial de consentimientos.</li>
+      <li>Disponible desde: <strong style="color: rgba(245,237,216,0.85);">Ajustes → Privacidad y Legal → Exportar mis datos</strong>.</li>
+      <li>Tiempo de generación: hasta 24 horas.</li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">3. Cómo solicitar la eliminación</h2>
+
+    <p class="sub-label">Desde la app (recomendado)</p>
+    <ol style="padding-left: 20px; margin: 0 0 16px; color: rgba(245,237,216,0.65); font-size: 0.88rem; line-height: 1.8;">
+      <li>Ve a <strong style="color: rgba(245,237,216,0.85);">Ajustes</strong> (icono engranaje).</li>
+      <li>Pulsa <strong style="color: rgba(245,237,216,0.85);">Privacidad y Legal</strong>.</li>
+      <li>Pulsa <strong style="color: rgba(245,237,216,0.85);">Eliminación de Cuenta</strong>.</li>
+      <li>Elige "Eliminar conversaciones" o "Eliminar cuenta completa".</li>
+      <li>Confirma tu decisión.</li>
+    </ol>
+
+    <p class="sub-label">Por email o desde esta web (sin descargar la app)</p>
+    <p class="body-text">
+      Envía un email indicando: el email de tu cuenta (o que usas cuenta anónima),
+      y el tipo de borrado que deseas (solo conversaciones o cuenta completa).
+    </p>
+
+    <div class="request-form">
+      <h3>Solicitar eliminación por email</h3>
+      <p>Asunto: <strong style="color: rgba(245,237,216,0.85);">"Solicitud de eliminación de cuenta"</strong></p>
+      <p>Responderemos en un plazo máximo de <strong style="color: rgba(245,237,216,0.85);">72 horas</strong> confirmando que hemos recibido tu solicitud.</p>
+      <a href="mailto:stelycontacto.app@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta"
+         class="request-email-link">
+        Enviar solicitud &#8594;
+      </a>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">4. Período de gracia (eliminación de cuenta completa)</h2>
+    <ul class="section-list">
+      <li>Tienes 7 días desde que confirmas la solicitud para cancelarla.</li>
+      <li>Para cancelar: entra en la app → Ajustes → Cancelar eliminación; o escríbenos a stelycontacto.app@gmail.com.</li>
+      <li>Si no cancelas en 7 días, el borrado se ejecuta de forma automática y permanente.</li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">5. Qué se borra exactamente</h2>
+    <table class="delete-table">
+      <thead>
+        <tr><th>Dato</th><th>Plazo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Conversaciones y mensajes</td><td>Inmediato (opción A) / 7 días (opción B)</td></tr>
+        <tr><td>Perfil y preferencias</td><td>Al ejecutarse el borrado de cuenta</td></tr>
+        <tr><td>Historial de consentimientos GDPR</td><td>Al ejecutarse el borrado</td></tr>
+        <tr><td>Datos de suscripción (RevenueCat)</td><td>30 días máximo</td></tr>
+        <tr><td>Copias de seguridad en servidores</td><td>Máximo 30 días</td></tr>
+        <tr><td>Datos técnicos de app</td><td>Al ejecutarse el borrado</td></tr>
+      </tbody>
+    </table>
+    <p class="body-text">
+      <strong style="color: rgba(245,237,216,0.80);">Nota sobre suscripciones:</strong>
+      si tienes un plan Premium activo, el acceso continúa hasta el final del período pagado.
+      Cancela la suscripción recurrente desde Google Play / App Store por separado.
+    </p>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">6. Excepción legal (Art. 17.3 GDPR)</h2>
+    <p class="body-text">
+      Por obligación fiscal española se retienen registros de transacciones económicas (5-7 años).
+      Los consentimientos legales se conservan de forma anonimizada mínimo 3 años.
+      Nada de esto permite identificarte personalmente.
+    </p>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">7. Confirmación de borrado</h2>
+    <ul class="section-list">
+      <li>Si tenías cuenta con email: recibirás un email de confirmación cuando el proceso se complete.</li>
+      <li>Si eras usuaria anónima: la confirmación se muestra en pantalla en el momento del borrado.</li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <h2 class="section-title">8. Contacto para derechos GDPR</h2>
+    <p class="body-text">
+      Para cualquier duda, solicitud de datos o ejercicio de otros derechos (acceso, rectificación, portabilidad, limitación):
+    </p>
+    <p class="body-text">
+      <a href="mailto:stelycontacto.app@gmail.com" style="color: var(--dorado, #E8B547);">stelycontacto.app@gmail.com</a><br />
+      Responsable: Sandra Alonso España (autónoma) — España<br />
+      Autoridad de control: <a href="https://www.aepd.es" style="color: var(--dorado, #E8B547);" target="_blank" rel="noopener">Agencia Española de Protección de Datos (aepd.es)</a><br />
+      Plazo de respuesta: máximo 30 días (estándar GDPR).
+    </p>
+
+    <p class="legal-note">
+      Stely &middot; Eliminación de Cuenta y Datos v2.0 &middot; 21 de mayo de 2026
+    </p>
+
+  </main>
+
+  <footer style="text-align:center; padding: 32px 24px; border-top: 1px solid rgba(232,181,71,0.10);">
+    <p style="font-size:0.75rem; color:rgba(245,237,216,0.25); letter-spacing:0.06em;">
+      &copy; 2026 Stely &mdash;
+      <a href="privacy.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Privacidad</a>
+      &middot;
+      <a href="terms.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Términos</a>
+      &middot;
+      <a href="disclaimer-ia.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Aviso IA</a>
+      &middot;
+      <a href="politica-premium.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Suscripción</a>
+      &middot;
+      <a href="eliminar-cuenta.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Eliminar cuenta</a>
+      &middot;
+      <a href="aviso-legal.html" style="color:rgba(245,237,216,0.40); text-decoration:none;">Aviso Legal</a>
+    </p>
+  </footer>
+
+</body>
+</html>
